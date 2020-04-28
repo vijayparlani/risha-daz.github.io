@@ -595,57 +595,23 @@ video {
   height: auto;
 }
 
-/* for desktop */
-
-@media(min-width: 1024px){
-  .nav-item{
-    padding: 1.5rem;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-
-  .main-heading{
-    font-size: 6rem;
-    font-weight: 700;
-    padding-top: 14rem;
-    text-transform: uppercase;
-    color: #fff;
-  }
-
-  .main-subheading{
-    font-style: italic;
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 4rem;
-    color: #fff;
-  }
+.nav-item{
+  padding: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
-@media(max-width:1024px){
-  .nav-item{
-    padding: 1.5rem;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
+.notvis{
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
 
-  .main-heading{
-    font-size: 2rem;
-    font-weight: 700;
-    padding-top: 14rem;
-    text-transform: uppercase;
-    color: #fff;
-  }
-
-  .main-subheading{
-    font-style: italic;
-    margin-bottom: 2.5rem;
-    padding-bottom: 4rem;
-    color: #fff;
-  }
+.vis {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .container {
