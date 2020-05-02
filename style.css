@@ -603,6 +603,18 @@ video {
   font-weight: 700;
 }
 
+.mob-nav-item{
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .notvis{
   opacity: 0;
   transform: translate(0, 20px);
