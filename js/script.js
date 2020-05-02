@@ -1,20 +1,18 @@
 //Hamburger Menu
 var isOpen= false;
-var nav2=document.querySelector('.nav2');
-console.log(nav2);
+var mob_nav=document.querySelector('.mob-nav');
+console.log(mob_nav);
 var hammenu=document.querySelector('.ham');
 console.log(hammenu);
+var x_button=document.querySelector('.x-button');
 hammenu.addEventListener('click', (e) => {
-    isOpen=!isOpen;
-    console.log(isOpen);
-    if (isOpen==true)
-    {nav2.style.display='flex';}
-    else{nav2.style.display='none' ;}
-    })
-window.addEventListener('resize',function(e){
-    if(window.innerWidth>1024){nav2.style.display='flex';
-}
-else{nav2.style.display='none';}
+    mob_nav.classList.remove('hidden');
+    hammenu.classList.add('hidden');
+    });
+
+x_button.addEventListener('click',(e)=>{
+    mob_nav.classList.add('hidden');
+    hammenu.classList.remove('hidden');
 })
 
 //createAI arrow
