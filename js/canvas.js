@@ -1,6 +1,6 @@
 var canvas=document.querySelector('canvas');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight-4;
+canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 var cloud=document.getElementById('cloud');
@@ -96,7 +96,7 @@ function display_score(){
     
 }
 var x =100;
-var y=640;
+var y=660;
 var sprite= new Sprite(x,y);
 var obs_s=canvas.width;
 function reset_obs(){obs_ar=[]
