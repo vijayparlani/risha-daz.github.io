@@ -7,6 +7,7 @@ var cloud=document.getElementById('cloud');
 var rock=document.getElementById('rock');
 console.log(rock)
 var score=0;
+var timer=0;
 var h_score=0;
 var collided=false;
 function Sprite(x,y){
@@ -157,7 +158,12 @@ function animate(){
     requestAnimationFrame(animate);
     if(collided==false){
     bg();
-    
+    if(timer<300){
+        c.font = '30px Courier';
+    c.fillStyle = 'black';
+    c.fillText('Press Space or UpArrow Key to jump', 800, 100);
+    timer+=1
+    };
     display_score();
     float_clouds();
     collision();
