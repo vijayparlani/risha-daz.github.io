@@ -96,7 +96,7 @@ function display_score(){
     
 }
 var x =100;
-var y=canvas.height-70;
+var y=canvas.height;
 var sprite= new Sprite(x,y);
 var obs_s=canvas.width;
 function reset_obs(){obs_ar=[]
